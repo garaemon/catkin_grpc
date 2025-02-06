@@ -2,3 +2,73 @@
 	shallow = true
 	path = grpc/grpc
 	url = https://github.com/grpc/grpc.git
+[submodule "grpc/grpc/third_party/zlib"]
+	shallow = true
+	path = grpc/grpc/third_party/zlib
+	url = https://github.com/madler/zlib
+	# When using CMake to build, the zlib submodule ends up with a
+	# generated file that makes Git consider the submodule dirty. This
+	# state can be ignored for day-to-day development on gRPC.
+	ignore = dirty
+[submodule "grpc/grpc/third_party/protobuf"]
+	shallow = true
+	path = grpc/grpc/third_party/protobuf
+	url = https://github.com/protocolbuffers/protobuf.git
+[submodule "grpc/grpc/third_party/googletest"]
+	shallow = true
+	path = grpc/grpc/third_party/googletest
+	url = https://github.com/google/googletest.git
+[submodule "grpc/grpc/third_party/benchmark"]
+	shallow = true
+	path = grpc/grpc/third_party/benchmark
+	url = https://github.com/google/benchmark
+[submodule "grpc/grpc/third_party/boringssl-with-bazel"]
+	shallow = true
+	path = grpc/grpc/third_party/boringssl-with-bazel
+	url = https://github.com/google/boringssl.git
+[submodule "grpc/grpc/third_party/re2"]
+	shallow = true
+	path = grpc/grpc/third_party/re2
+	url = https://github.com/google/re2.git
+[submodule "grpc/grpc/third_party/cares/cares"]
+	shallow = true
+	path = grpc/grpc/third_party/cares/cares
+	url = https://github.com/c-ares/c-ares.git
+	branch = cares-1_17_2
+[submodule "grpc/grpc/third_party/bloaty"]
+	shallow = true
+	path = grpc/grpc/third_party/bloaty
+	url = https://github.com/google/bloaty.git
+[submodule "grpc/grpc/third_party/abseil-cpp"]
+	shallow = true
+	path = grpc/grpc/third_party/abseil-cpp
+	url = https://github.com/abseil/abseil-cpp.git
+	branch = lts_2020_02_25
+[submodule "grpc/grpc/third_party/envoy-api"]
+	shallow = true
+	path = grpc/grpc/third_party/envoy-api
+	url = https://github.com/envoyproxy/data-plane-api.git
+[submodule "grpc/grpc/third_party/googleapis"]
+	shallow = true
+	path = grpc/grpc/third_party/googleapis
+	url = https://github.com/googleapis/googleapis.git
+[submodule "grpc/grpc/third_party/protoc-gen-validate"]
+	shallow = true
+	path = grpc/grpc/third_party/protoc-gen-validate
+	url = https://github.com/envoyproxy/protoc-gen-validate.git
+[submodule "grpc/grpc/third_party/libuv"]
+	shallow = true
+	path = grpc/grpc/third_party/libuv
+	url = https://github.com/libuv/libuv.git
+[submodule "grpc/grpc/third_party/opencensus-proto"]
+	shallow = true
+	path = grpc/grpc/third_party/opencensus-proto
+	url = https://github.com/census-instrumentation/opencensus-proto.git
+[submodule "grpc/grpc/third_party/opentelemetry"]
+	shallow = true
+	path = grpc/grpc/third_party/opentelemetry
+	url = https://github.com/open-telemetry/opentelemetry-proto.git
+[submodule "grpc/grpc/third_party/xds"]
+	shallow = true
+	path = grpc/grpc/third_party/xds
+	url = https://github.com/cncf/xds.git
